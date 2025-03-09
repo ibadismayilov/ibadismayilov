@@ -5,7 +5,7 @@
 - 🌱 I’m currently learning **Next.js & Backend Development**
 - 👯 I’m looking to collaborate on **Open-source Projects**
 - 💬 Ask me about **React, JavaScript, Node.js**
-- 📫 How to reach me: **your.email@example.com**
+- 📫 How to reach me: **ibadismayil635l@gmail.com**
 - ⚡ Fun fact: **I love coding and coffee ☕**
 
 ### Skills:
