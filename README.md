@@ -1,26 +1,26 @@
-<h1 align="center">Hi 👋, I'm İbad İsmayılov</h1>
-### [cite_start]Hi 👋, I'm İbad İsmayılov [cite: 1]
+### Hi 👋, I'm İbad İsmayılov
 
-[cite_start]Mən müasir texnologiyalarla həm istifadəçi dostu və adaptiv frontend, həm də etibarlı backend sistemlər hazırlayan bir Full Stack Developer-əm[cite: 2, 7]. [cite_start]Kod keyfiyyətinə və sənaye standartlarına ciddi riayət edir [cite: 8][cite_start], komanda ilə effektiv əməkdaşlıq edərək layihələrin uğuruna töhfə verirəm[cite: 9].
+[cite_start]I'm a dedicated Full Stack Developer who builds both user-friendly and adaptive front-end systems and reliable back-end systems using modern technologies[cite: 7]. [cite_start]I strictly adhere to code quality and industry standards[cite: 8]. [cite_start]I am committed to continuous learning and improving my problem-solving skills[cite: 8]. [cite_start]With a cooperative, goal-oriented, and responsible approach to teamwork, I contribute to the success of projects[cite: 9].
 
 ---
 
-### 💻 Mənim Bacarıqlarım
+### 🚀 My Skills
 
-#### Back-End Technologies 🌐
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-![.NET Core](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=for-the-badge&logo=asp.net&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
-![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
+#### Back-End Development 🌐
+[cite_start]I have a strong foundation in backend technologies, specializing in the .NET ecosystem[cite: 35]. My skills include:
+* [cite_start]**Languages & Frameworks:** C#, Object-Oriented Programming (OOP), .NET Core / .NET Framework, ASP.NET MVC, ASP.NET Core, and Web API[cite: 36].
+* [cite_start]**Databases & ORMs:** ADO.NET and Entity Framework[cite: 36].
+* [cite_start]**Tools & Methodologies:** NuGet Package management, debugging, logging, and Swagger for API documentation[cite: 36].
+* [cite_start]**Version Control:** Proficient with Git and GitHub for collaborative development[cite: 36].
 
-#### Frontend Technologies 🎨
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+#### Front-End Development 🎨
+[cite_start]I'm skilled in creating dynamic and responsive user interfaces with a variety of modern frontend technologies[cite: 37]. My expertise includes:
+* [cite_start]**Languages & Libraries:** HTML, CSS, JavaScript, and TypeScript[cite: 38].
+* [cite_start]**Frameworks & State Management:** I build interactive applications using ReactJS, and manage state effectively with Redux and Redux Toolkit[cite: 38].
+* [cite_start]**API Communication:** I am experienced in using Node.js and Postman for handling API requests and testing endpoints[cite: 38].
+
+---
+
+### 🔗 Connect With Me
+* [cite_start]**LinkedIn:** [https://www.linkedin.com/in/ibad-ismayılov-90a669317/](https://www.linkedin.com/in/ibad-ismayılov-90a669317/) [cite: 5]
+* [cite_start]**Email:** ibadismayil635@gmail.com [cite: 3]
