@@ -1,3 +1,11 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="github-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="github-light.svg">
+  <img alt="Ibad Ismayilov Hero Banner" src="github-dark.svg" width="100%">
+</picture>
+
+
+
 ### Hi 👋, I'm İbad İsmayılov
 
 I'm a dedicated Full Stack Developer who builds both user-friendly and adaptive front-end systems and reliable back-end systems using modern technologies. I strictly adhere to code quality and industry standards. I am committed to continuous learning and improving my problem-solving skills. With a cooperative, goal-oriented, and responsible approach to teamwork, I contribute to the success of projects.
