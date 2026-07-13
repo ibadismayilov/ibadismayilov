@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712" />
+      <stop offset="100%" stop-color="#0b0f19" />
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED">
+        <animate attributeName="stop-color" values="#7C3AED;#22D3EE;#10B981;#7C3AED" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#22D3EE">
+        <animate attributeName="stop-color" values="#22D3EE;#10B981;#7C3AED;#22D3EE" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#10B981">
+        <animate attributeName="stop-color" values="#10B981;#7C3AED;#22D3EE;#10B981" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+    <linearGradient id="ascii-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+
+    <!-- Filters for Glow & Glassmorphism -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="subtle-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="blur-bg">
+      <feGaussianBlur stdDeviation="20" />
+    </filter>
+
+    <!-- Styles -->
+    <style>
+      .font-mono { font-family: 'Fira Code', 'Courier New', monospace; }
+      .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif; }
+      .cursor { animation: blink 1s infinite; }
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+      .floating { animation: float 6s ease-in-out infinite; }
+      @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+      .pill:hover { filter: url(#glow); }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1180" height="610" fill="url(#bg-grad)" rx="16" />
+
+  <!-- Ambient Glow Background Particles -->
+  <circle cx="200" cy="200" r="150" fill="#7C3AED" opacity="0.15" filter="url(#blur-bg)" />
+  <circle cx="900" cy="450" r="180" fill="#22D3EE" opacity="0.1" filter="url(#blur-bg)" />
+  <circle cx="600" cy="100" r="120" fill="#10B981" opacity="0.08" filter="url(#blur-bg)" />
+
+  <!-- Moving Scanline Effect -->
+  <line x1="0" y1="0" x2="1180" y2="0" stroke="rgba(255,255,255,0.015)" stroke-width="4">
+    <animate attributeName="y1" values="0;610" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="0;610" dur="10s" repeatCount="indefinite" />
+  </line>
+
+  <!-- LEFT SECTION: Floating Animated ASCII Portrait -->
+  <g class="floating" transform="translate(40, 0)">
+    <!-- Glow behind portrait -->
+    <rect x="30" y="80" width="380" height="440" fill="url(#ascii-grad)" opacity="0.05" filter="url(#blur-bg)" rx="12"/>
+    
+    <!-- ASCII Art Lines Matrix -->
+    <g fill="url(#ascii-grad)" class="font-mono" font-size="11" font-weight="bold" opacity="0.85">
+      <!-- Simulated Matrix Lines typing reveal -->
+      <text x="50" y="120">0101   .::::::.   10101101</text>
+      <text x="50" y="140">110  .::::::::::.  1011010</text>
+      <text x="50" y="160">00  .::`  `::`  `::.  0101</text>
+      <text x="50" y="180">11  :::    ::    :::  1011</text>
+      <text x="50" y="200">01  :::[IBAD ISMAYILOV]:: 01</text>
+      <text x="50" y="220">10  :::    ::    :::  1010</text>
+      <text x="50" y="240">11  `::.  .::.  .::`  1101</text>
+      <text x="50" y="260">001  `::::::::::`  10110</text>
+      <text x="50" y="280">1010   `::::::`   01011001</text>
+      <text x="50" y="310" fill="#22D3EE" font-size="13">&gt; CORE_ENG_LOADED: 100%</text>
+      <text x="50" y="335" fill="#10B981" font-size="13">&gt; SYS_STATUS: SECURE</text>
+      
+      <!-- Abstract Tech Lines -->
+      <path d="M50 370 H 380" stroke="url(#ascii-grad)" stroke-width="1" opacity="0.3" stroke-dasharray="5 5"/>
+      <text x="50" y="400" font-size="10" opacity="0.5">IP: 127.0.0.1 // LOC: AZERBAIJAN</text>
+      <text x="50" y="420" font-size="10" opacity="0.5">HOST: AzTU_ROBOTICS_LAB_05</text>
+      <text x="50" y="440" font-size="10" opacity="0.5">SEC_PROFILE: PEN-TEST_ACTIVE</text>
+    </g>
+  </g>
+
+  <!-- RIGHT SECTION: Premium Terminal Window -->
+  <g transform="translate(460, 40)">
+    <!-- Terminal Box (Glassmorphism) -->
+    <rect width="680" height="530" fill="#0F172A" fill-opacity="0.8" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" rx="12" />
+    
+    <!-- Terminal Header (Mac Style) -->
+    <circle cx="25" cy="22" r="6" fill="#EF4444" />
+    <circle cx="45" cy="22" r="6" fill="#F59E0B" />
+    <circle cx="65" cy="22" r="6" fill="#10B981" />
+    <text x="340" y="26" fill="#94A3B8" class="font-mono" font-size="13" text-anchor="middle">ibadismayilov@terminal:~</text>
+    <line x1="0" y1="44" x2="680" y2="44" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+
+    <!-- Terminal Content -->
+    <g transform="translate(30, 80)">
+      <!-- Greeting -->
+      <text x="0" y="0" fill="#F8FAFC" class="font-sans" font-size="24" font-weight="bold">Hi 👋</text>
+      <text x="0" y="35" fill="#F8FAFC" class="font-sans" font-size="34" font-weight="bold">I'm <tspan fill="url(#accent-grad)">Ibad Ismayilov</tspan></text>
+
+      <!-- Animated Typing Role -->
+      <g transform="translate(0, 75)">
+        <text x="0" y="0" fill="#22D3EE" class="font-mono" font-size="20" font-weight="600">
+          <animate attributeName="textContent" 
+                   values="&gt; Full Stack Developer ;&gt; .NET Core &amp; React Engineer ;&gt; Cyber Security Enthusiast ;&gt; Full Stack Developer " 
+                   dur="12s" repeatCount="indefinite" />
+        </text>
+        <rect x="330" y="-18" width="8" height="22" fill="#22D3EE" class="cursor" />
+      </g>
+
+      <!-- Sequential Reveal Profile Details -->
+      <g transform="translate(0, 120)" class="font-mono" font-size="14" fill="#94A3B8">
+        <!-- Location -->
+        <g opacity="0">
+          <animate attributeName="opacity" to="1" begin="1s" dur="0.5s" fill="freeze" />
+          <text x="0" y="0" fill="#10B981">📍 Location:</text>
+          <text x="130" y="0" fill="#F8FAFC">Baku, Azerbaijan</text>
+        </g>
+        <!-- Education -->
+        <g opacity="0">
+          <animate attributeName="opacity" to="1" begin="1.5s" dur="0.5s" fill="freeze" />
+          <text x="0" y="25" fill="#10B981">🎓 Education:</text>
+          <text x="130" y="25" fill="#F8FAFC">Azerbaijan Technical University</text>
+        </g>
+        <!-- Current Focus -->
+        <g opacity="0">
+          <animate attributeName="opacity" to="1" begin="2s" dur="0.5s" fill="freeze" />
+          <text x="0" y="50" fill="#10B981">🚀 Focus:</text>
+          <text x="130" y="50" fill="#F8FAFC">Scalable Architecture &amp; App Security</text>
+        </g>
+        <!-- Email -->
+        <g opacity="0">
+          <animate attributeName="opacity" to="1" begin="2.5s" dur="0.5s" fill="freeze" />
+          <text x="0" y="75" fill="#10B981">📧 Email:</text>
+          <text x="130" y="75" fill="#22D3EE">ibad.ismayilov.prof@gmail.com</text>
+        </g>
+      </g>
+
+      <!-- SKILLS SECTION (Glowing Pills) -->
+      <g transform="translate(0, 240)">
+        <text x="0" y="0" fill="#F8FAFC" class="font-sans" font-size="16" font-weight="bold">Tech Stack &amp; Tools</text>
+        
+        <!-- Row 1 -->
+        <g transform="translate(0, 15)" class="font-mono" font-size="12" fill="#F8FAFC">
+          <!-- C# / .NET -->
+          <g class="pill" transform="translate(0,0)">
+            <rect width="85" height="28" fill="#1E293B" rx="6" stroke="rgba(255,255,255,0.1)"/>
+            <text x="42" y="18" text-anchor="middle" fill="#A78BFA">.NET Core</text>
+          </g>
+          <!-- React -->
+          <g class="pill" transform="translate(95,0)">
+            <rect width="70" height="28" fill="#1E293B" rx="6" stroke="rgba(255,255,255,0.1)"/>
+            <text x="35" y="18" text-anchor="middle" fill="#22D3EE">React</text>
+          </g>
+          <!-- TypeScript -->
+          <g class="pill" transform="translate(175,0)">
+            <rect width="95" height="28" fill="#1E293B" rx="6" stroke="rgba(255,255,255,0.1)"/>
+            <text x="47" y="18" text-anchor="middle" fill="#38BDF8">TypeScript</text>
+          </g>
+          <!-- Node.js -->
+          <g class="pill" transform="translate(280,0)">
+            <rect width="80" height="28" fill="#1E293B" rx="6" stroke="rgba(255,255,255,0.1)"/>
+            <text x="40" y="18" text-anchor="middle" fill="#4ADE80">Node.js</text>
+          </g>
+          <!-- PostgreSQL -->
+          <g class="pill" transform="translate(370,0)">
+            <rect width="95" height="28" fill="#1E293B" rx="6" stroke="rgba(255,255,255,0.1)"/>
+            <text x="47" y="18" text-anchor="middle" fill="#60A5FA">PostgreSQL</text>
+          </g>
+        </g>
+
+        <!-- Row 2 -->
+        <g transform="translate(0, 55)" class="font-mono" font-size="12" fill="#F8FAFC">
+          <!-- MongoDB -->
+          <g class="pill" transform="translate(0,0)">
+            <rect width="85" height="28" fill="#1E293B" rx="6" stroke="rgba(255,255,255,0.1)"/>
+            <text x="42" y="18" text-anchor="middle" fill="#34D399">MongoDB</text>
+          </g>
+          <!-- Docker -->
+          <g class="pill" transform="translate(95,0)">
+            <rect width="75" height="28" fill="#1E293B" rx="6" stroke="rgba(255,255,255,0.1)"/>
+            <text x="37" y="18" text-anchor="middle" fill="#38BDF8">Docker</text>
+          </g>
+          <!-- Linux -->
+          <g class="pill" transform="translate(180,0)">
+            <rect width="70" height="28" fill="#1E293B" rx="6" stroke="rgba(255,255,255,0.1)"/>
+            <text x="35" y="18" text-anchor="middle" fill="#FBBF24">Linux</text>
+          </g>
+          <!-- CyberSec / Git -->
+          <g class="pill" transform="translate(260,0)">
+            <rect width="110" height="28" fill="#1E293B" rx="6" stroke="rgba(255,255,255,0.1)"/>
+            <text x="55" y="18" text-anchor="middle" fill="#F87171">Cyber Security</text>
+          </g>
+          <g class="pill" transform="translate(380,0)">
+            <rect width="50" height="28" fill="#1E293B" rx="6" stroke="rgba(255,255,255,0.1)"/>
+            <text x="25" y="18" text-anchor="middle" fill="#FB923C">Git</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- SOCIAL ICONS (Bottom) -->
+      <g transform="translate(0, 370)">
+        <line x1="0" y1="0" x2="620" y2="0" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+        
+        <!-- GitHub Link Icon -->
+        <g transform="translate(0, 20)" fill="#94A3B8" class="pill">
+          <circle cx="15" cy="15" r="18" fill="#1E293B" opacity="0.6"/>
+          <path d="M15 5C9.5 5 5 9.5 5 15C5 19.4 7.8 23.2 11.8 24.5C12.3 24.6 12.5 24.3 12.5 24C12.5 23.7 12.5 22.9 12.5 21.9C9.7 22.5 9.1 20.6 9.1 20.6C8.7 19.5 8.1 19.2 8.1 19.2C7.2 18.6 8.2 18.6 8.2 18.6C9.2 18.7 9.7 19.7 9.7 19.7C10.6 21.2 12 20.8 12.6 20.5C12.7 19.8 13 19.4 13.3 19.1C11.1 18.9 8.8 18 8.8 14.2C8.8 13.1 9.2 12.2 9.8 11.5C9.7 11.2 9.4 10.2 9.9 8.9C9.9 8.9 10.7 8.6 12.6 9.9C13.4 9.7 14.2 9.6 15 9.6C15.8 9.6 16.6 9.7 17.4 19.9C19.3 8.6 20.1 8.9 20.1 8.9C20.6 10.2 20.3 11.2 20.2 11.5C20.8 12.2 21.2 13.1 21.2 14.2C21.2 18.1 18.9 18.9 16.7 19.1C17.1 19.4 17.4 20.1 17.4 21.1C17.4 22.6 17.4 23.7 17.4 24C17.4 24.3 17.6 24.6 18.1 24.5C22.1 23.2 25 19.4 25 15C25 9.5 20.5 5 15 5Z" fill="#F8FAFC"/>
+        </g>
+
+        <!-- LinkedIn Link Icon -->
+        <g transform="translate(50, 20)" fill="#94A3B8" class="pill">
+          <circle cx="15" cy="15" r="18" fill="#1E293B" opacity="0.6"/>
+          <path d="M9 10H12V20H9V10ZM10.5 5C11.3 5 12 5.7 12 6.5C12 7.3 11.3 8 10.5 8C9.7 8 9 7.3 9 6.5C9 5.7 9.7 5 10.5 5ZM14 10H17V11.5H17.1C17.5 10.8 18.4 10 19.8 10C22.6 10 23 11.8 23 14.2V20H20V15.5C20 14.4 19.8 13 18.3 13C16.8 13 16.5 14.2 16.5 15.4V20H13.5V10H14Z" fill="#0077B5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Border Shimmer Line Animation -->
+  <rect width="1180" height="610" rx="16" fill="none" stroke="url(#accent-grad)" stroke-width="2" opacity="0.4" />
+</svg>
