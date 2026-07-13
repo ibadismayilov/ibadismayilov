@@ -4,6 +4,10 @@
   <img alt="Ibad Ismayilov Hero Banner" src="github-dark.svg" width="100%">
 </picture>
 
+<p align="center">
+  <img src="https://komarev.com/ghvc/?username=ibadismayilov&color=7C3AED&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
+</p>
+
 
 
 ### Hi 👋, I'm İbad İsmayılov
