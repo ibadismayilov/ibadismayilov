@@ -55,4 +55,4 @@ I'm skilled in creating dynamic and responsive user interfaces with a variety of
 ### 🔗 Connect With Me
 
 * **LinkedIn:** [https://www.linkedin.com/in/ibad-ismayılov-90a669317/](https://www.linkedin.com/in/ibad-ismayılov-90a669317/)
-* **Email:** ibadismayil635@gmail.com
+* **Email:** ibad.ismayilov.prof@gmail.com
