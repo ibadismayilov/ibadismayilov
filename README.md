@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="github-light.svg">
-  <source media="(prefers-color-scheme: light)" srcset="github-dark.svg">
-  <img alt="Ibad Ismayilov Hero Banner" src="github-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="github-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="github-light.svg">
+  <img alt="Ibad Ismayilov Hero Banner" src="github-dark.svg" width="100%">
 </picture>
 
 
